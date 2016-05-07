@@ -1,7 +1,7 @@
 class ToDoLists < ActiveRecord::Migration
   def up
     create_table :lists do |t|
-      t.integer :name, null: false
+      t.string :name, null: false
       t.integer :user_id, null: false
     end
   end
